@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Resultat </title>
+    <link rel="stylesheet " href="cv.css">
+
+
+</head>
+<style> h1 {
+color:blue;
+border: 2px solid black;
+padding: 5px;
+background-color: lightblue
+}
+</style>
+
+<body>
+    <p> <center><img src={{url_for('static',filename="Anal1.png")}} class="img-responsive logo" width="200" /> <center/> </p>
+
+
+
+
+
+   </p>
+
+    <h1> <strong> INFORMATION PATIENTS </strong> </h1>
+
+
+
+
+    <ul>
+  <li><Strong> Nom Utilisateur: {{ Utilisateur }}  </Strong>.<br />  </li>
+    <li><Strong> Nom: {{ Nom }}  </Strong>.<br />  </li>
+    <li><strong>Prenom: {{ Prenom }} </Strong> </li>
+    <li><strong> Age: {{ Age }}  </Strong>  </li>
+  <li><strong> Adresse: {{ Adresse }}  </Strong>  </li>
+</ul>
+
+    <h1>NUMEROTATION GLOBULAIRE</h1>
+    <ul>
+
+    <li><Strong>Hematies: {{ Hematies }}  </Strong></li>
+    <li><Strong>Hemoglobine: {{ Hemoglobine }}  </Strong></li>
+    <li><Strong>Hematocrite: {{ Hematocrite }} </Strong></li>
+    <li><Strong>VGM: {{ VGM }} </Strong></li>
+    <li><Strong>CCMH: {{ CCMH }} </Strong> </li>
+    <li><Strong>TCMH: {{ TCMH }} </Strong></li>
+    <li><Strong>RDW: {{ RDW }} </Strong> </li>
+
+</ul>
+
+
+  <h1>Formulaire SANGUINE </h1>
+
+    <p><Strong>  Polynucleaires_basophiles : {{ Polynucleaires_basophiles  }} </Strong>. <br /> <Strong> Polynucleaires_neutrophiles  : {{ Polynucleaires_neutrophiles }}</Strong>  <br /> <Strong> Lymphocytes {{ Lymphocytes }} </Strong>
+   </p>
+
+    <h1> Formulaire GLOBULAIRE </h1>
+      <p><Strong> Monocytes {{ Monocytes }} </Strong>  <br />
+
+</body>
+</html>
